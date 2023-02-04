@@ -868,7 +868,7 @@ public class DatabaseMetaData implements java.sql.DatabaseMetaData {
             + (conf.yearIsDateType() ? "NUMERIC_SCALE" : "0")
             + " WHEN 'tinyint' THEN "
             + (conf.tinyInt1isBit() ? "0" : "NUMERIC_SCALE")
-            + " ELSE NUMERIC_SCALE END, UNSIGNED INTEGER) DECIMAL_DIGITS,"
+            + " ELSE NUMERIC_SCALE END, SIGNED INTEGER) DECIMAL_DIGITS,"
             + " 10 NUM_PREC_RADIX, IF(IS_NULLABLE = 'yes',1,0) NULLABLE,COLUMN_COMMENT REMARKS,"
             + " COLUMN_DEFAULT COLUMN_DEF, 0 SQL_DATA_TYPE, 0 SQL_DATETIME_SUB,  "
             + " LEAST(CHARACTER_OCTET_LENGTH,"
